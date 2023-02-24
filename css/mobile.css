@@ -1,0 +1,255 @@
+/*RESPONSIVE WEB*/
+
+@media(max-width: 900px){
+
+   .contenedor-principal-header{
+       transform: translateX(-700px);
+       display: block;
+       position: fixed;
+       top: 0;
+       left: 0;
+       height: 100%;
+       width: 280px; 
+       transition: transform .5s ease-in-out ; 
+   }
+ 
+   .navbar ul li a i{
+       margin-right: 9px;
+       font-size: 20px;
+   }
+ 
+   .contenedor-principal-header.show{
+       transform: translateX(0px);
+   }
+ 
+   main{
+       margin-left: 0;
+   }
+   
+   #presentacion .checkbtn{  
+    display: block;
+    left:94%;
+   }
+}/* ==============================================
+                 RESPONSIVE 
+================================================= */
+
+@media (min-width:320px) and (max-width:900px){
+   
+
+   .contenedor-principal-header.show{
+      transform: translateX(0px);
+   }
+   
+   #presentacion .checkbtn{  
+      display: block;
+      left: 92%;
+      
+   }
+
+   footer{
+      margin-left: 0;
+   }
+
+   main{
+      margin-left: 0;
+   }
+   .info-adicional-py{
+      margin-left: 0;
+   }
+
+}
+
+
+@media (min-width:1101px) and (max-width: 1200px) {
+
+   .info-fotos .info-sobre-mi{
+      font-size: 16px;
+      line-height: 16px;
+   }
+}
+
+
+/*=======================================*/
+@media (min-width:901px) and (max-width: 1100px){
+   .contenedor-principal-header{
+      width: 250px; 
+   }
+   footer{
+      margin-left: 250px;
+   }
+
+   main{
+      margin-left: 250px ;
+   }
+   main .titulo-section .info-fotos{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 350px;
+   }
+
+   .contacto-info ul li{
+     
+      font-size: 14px;
+   }
+   .contacto-info ul li{
+      margin: 15px 0px ; 
+      font-size: 12px;
+   }
+
+   .info-fotos .info-sobre-mi{
+      font-size: 15px;
+      
+   }
+   .info-adicional-py{
+      margin-left: 250px;
+   }
+}
+/*=======================================*/
+
+@media (min-width:700px) and (max-width: 900px){ 
+   .info-fotos .info-sobre-mi{
+      font-size: 16px;
+      line-height: 14px;
+   }
+   main .titulo-section h2::after{
+      left: 42%;
+   }
+   #presentacion .hero-contenedor{
+      left: 20%;
+      top: 40%;
+   }  
+}
+/*=======================================*/
+
+@media (min-width:531px) and (max-width: 700px){ 
+
+   #presentacion .hero-contenedor h1{
+      font-size: 45px;
+      line-height: 45px; 
+   }
+
+   #presentacion .hero-contenedor{
+      left: 20%;
+      top: 40%;
+   }  
+
+   main .titulo-section .info-fotos{
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr 1fr;
+      padding: 10px;
+   }
+   main .titulo-section h2::after{
+      left: 40%;
+   }
+
+   #presentacion .checkbtn{  
+      left:90%;
+   }
+
+   .contenedor-contacto{
+      display: block;
+
+   }  
+   main .titulo-section .info-fotos{
+      text-align: center;
+      background: none;
+      grid-template-columns: 1fr;
+      grid-template-rows: none;
+   
+   }
+   main #sobre-mi {
+      margin-bottom: 60px;
+   }
+
+   .info-fotos .info-sobre-mi {
+      background: none;
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      line-height: 30px;
+   
+   }
+   .info-fotos .foto-pr-sobre-mi img,
+   .info-fotos .foto-se-sobre-mi img{
+   display: none;
+   }
+
+}
+
+
+/*==============================================*/
+@media (max-width: 530px){
+   #presentacion .checkbtn{  
+      display: block;
+      left:86%;
+      }
+
+   #presentacion .hero-contenedor h1{
+      font-size: 40px;
+      line-height: 40px; 
+   }
+   #presentacion .hero-contenedor p {
+      font-size: 20px;
+   }
+
+   #presentacion .hero-contenedor{
+      left: 10%;
+      top: 30%;
+   }
+
+   main .titulo-section h2{
+      font-size: 35px;
+   }
+   main .titulo-section h2::after{
+      left: 37%;
+   }
+
+   .info-fotos .info-sobre-mi{
+   font-size: 15px;
+   padding:15px 5px 5px 5px;
+   line-height: 20px;
+   }
+
+   #educacion-experiencia .habilidades-educacion-caja{
+      grid-template-columns: none;
+      
+   }
+
+   .titulo-galeria{
+      font-size: 16px;
+   }   
+
+   .contenedor-contacto{
+      display: block;
+   
+   }
+
+   .contacto-formulario{
+      margin: 30px 0 ;
+      padding: 10px;
+   
+   }
+   main .titulo-section .info-fotos{
+      text-align: center;
+      background: none;
+      grid-template-columns: 1fr;
+      grid-template-rows: none;
+   
+   }
+   main #sobre-mi {
+      margin-bottom: 60px;
+   }
+
+   .info-fotos .info-sobre-mi{
+      background: none;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+      line-height: 25px;
+   
+   }
+   .info-fotos .foto-pr-sobre-mi img,
+   .info-fotos .foto-se-sobre-mi img{
+   display: none;
+   }
+}

@@ -1,0 +1,184 @@
+
+/*===================================================
+            GALERIA DE FOTOS ADAPTABLE
+=====================================================*/
+
+@media screen and (min-width:300px) and (max-width: 467px){
+    .gallery-item:nth-of-type(odd) {
+       grid-column: 2 / span 2;
+    }
+    section .galeria .item{
+       grid-auto-rows: 115px;
+       gap: 12px;
+    }
+    .galeria .item .gallery-item {
+       height: 160px;
+    }
+ }
+ 
+ @media screen and (min-width:468px) and (max-width: 591px){
+    .gallery-item:nth-of-type(3n + 1) {
+       grid-column: 2 / span 2;
+    }
+ }
+ 
+ @media screen and (min-width:592px) and (max-width: 700px){
+    .gallery-item:nth-of-type(4n + 1) {
+       grid-column: 2 / span 2;
+    }
+ 
+ }
+ @media screen and (min-width:701px) and (max-width: 812px){
+    .gallery-item:nth-of-type(5n + 1) {
+       grid-column: 2 / span 2;
+    }
+ 
+ }
+ @media screen and (min-width:813px) and (max-width: 900px){
+    .gallery-item:nth-of-type(6n + 1) {
+       grid-column: 2 / span 2;
+    }
+ }
+ 
+ @media screen and (min-width:901px) and (max-width: 950px){
+    .gallery-item:nth-of-type(4n + 1) {
+       grid-column: 2 / span 2;
+    }
+ }
+ @media screen and (min-width:951px) and (max-width: 1062px){
+    .gallery-item:nth-of-type(5n + 1) {
+       grid-column: 2 / span 2;
+    }
+ 
+ }
+ @media screen and (min-width:1063px) and (max-width: 1100px){
+    .gallery-item:nth-of-type(6n + 1) {
+       grid-column: 2 / span 2;
+    }
+ }
+ @media screen and (min-width:1101px) and (max-width: 1112px){
+    .gallery-item:nth-of-type(5n + 1) {
+       grid-column: 2 / span 2;
+    }
+ }
+ 
+ @media screen and (min-width:1113px) and (max-width: 1250px){
+    .gallery-item:nth-of-type(6n + 1) {
+       grid-column: 2 / span 2;
+    }
+ }
+ @media (min-width:1251px) {
+    .section .galeria .item{
+       grid-template-columns: repeat(8, 80px);
+       grid-auto-rows: 125px;
+    }
+    .gallery-item:nth-of-type(8) {
+       grid-column: 2 / span 2;
+    }
+ }
+
+ 
+/* ==================================================== 
+   Responsive ventana emergente de galaria de fotos
+ ====================================================== */ 
+
+
+
+@media screen and (min-width:300px) and (max-width: 750px){
+    .contenedor-principal-masinfo{
+       margin: 0px;
+    }
+ 
+    .info-adicional-py .contenedor-proyecto{
+       flex-direction: column;
+       margin-right: 30px;
+    }
+    
+    .info-adicional-py .mas-info-img h3{
+       font-size: 20px;
+       margin-bottom: 20px;
+    }
+    
+    .info-adicional-py .mas-info-img p{
+       line-height: 16px;
+       font-size: 19px;
+    }
+    
+    .contenedor-img{
+       text-align: center;
+    }
+    .info-adicional-py img{
+       width: 300px;
+       height: 250px;
+       margin-right: 0px;  
+    }
+ 
+ }
+ @media screen and (min-width:751px) and (max-width: 900px){
+    .contenedor-principal-masinfo{
+       margin: 70px 30px 0px 0px;
+    }
+    .info-adicional-py img{
+       width: 230px;
+       height: 260px;
+       margin-right: 0px;  
+    }
+    .info-adicional-py .mas-info-img p{
+       line-height: 18px;
+       font-size: 19px;
+    }
+ 
+ }
+ 
+ @media screen and (min-width:901px) and (max-width: 1100px){
+ 
+    .contenedor-principal-masinfo{
+       margin-top: 10px;
+    }
+ 
+    .info-adicional-py .contenedor-proyecto{
+       flex-direction: column;
+       margin-right: 50px;
+    }
+       
+    .contenedor-img{
+       text-align: center;
+    }
+    .contenedor-img img{
+       width: 330px;
+       height: 300px;
+    }
+    .info-adicional-py .mas-info-img{
+       padding-top: 8px;
+    }
+    .info-adicional-py .mas-info-img p{
+       line-height: 18px;
+       font-size: 19px;
+    }
+    .info-adicional-py .mas-info-img h3{
+       font-size: 25px;
+       margin-bottom: 10px;
+    }
+ }
+ @media screen and (min-width:1101px) and (max-width: 1245px){
+    .contenedor-principal-masinfo{
+       margin: 90px 380px 0 70px;
+    }
+    .info-adicional-py img{
+       width: 250px;
+       height: 270px;
+       margin-right: 0px;  
+    }
+    .info-adicional-py .mas-info-img{
+       padding-top: 8px;
+    }
+    .info-adicional-py .mas-info-img p{
+       line-height: 18px;
+       font-size: 19px;
+    }
+ }
+ 
+ 
+ 
+ 
+ 
