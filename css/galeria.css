@@ -8,12 +8,13 @@
        grid-column: 2 / span 2;
     }
     section .galeria .item{
-       grid-auto-rows: 115px;
+       grid-auto-rows: 110px;
        gap: 12px;
     }
     .galeria .item .gallery-item {
-       height: 160px;
+       height: 100px;
     }
+    
  }
  
  @media screen and (min-width:468px) and (max-width: 591px){
@@ -82,9 +83,39 @@
    Responsive ventana emergente de galaria de fotos
  ====================================================== */ 
 
+ @media screen and (min-width:300px) and (max-width: 1245px){
+/* globales */
+   .contenedor-img{
+   text-align: center;
+   }
+ }
 
 
-@media screen and (min-width:300px) and (max-width: 750px){
+ @media screen and (min-width:300px) and (max-width: 350px){
+   .contenedor-principal-masinfo{
+      margin: 0px;
+   }
+   .info-adicional-py img{
+      width: 200px;
+      height: 200px;
+      margin: 0px;  
+   }
+   .info-adicional-py .mas-info-img p{
+      line-height: 14px;
+      font-size: 12px;
+   }
+   .info-adicional-py .contenedor-proyecto{
+      flex-direction: column;
+      margin-right: 30px;
+   }
+      
+   .info-adicional-py .mas-info-img h3{
+      font-size: 15px;
+      margin-bottom: 10px;
+   }
+ }
+
+@media screen and (min-width:350px) and (max-width: 750px){
     .contenedor-principal-masinfo{
        margin: 0px;
     }
@@ -104,11 +135,8 @@
        font-size: 19px;
     }
     
-    .contenedor-img{
-       text-align: center;
-    }
     .info-adicional-py img{
-       width: 300px;
+       width: 270px;
        height: 250px;
        margin-right: 0px;  
     }
@@ -141,9 +169,6 @@
        margin-right: 50px;
     }
        
-    .contenedor-img{
-       text-align: center;
-    }
     .contenedor-img img{
        width: 330px;
        height: 300px;

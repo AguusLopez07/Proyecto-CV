@@ -34,7 +34,7 @@
                  RESPONSIVE 
 ================================================= */
 
-@media (min-width:320px) and (max-width:900px){
+@media (min-width:300px) and (max-width:900px){
    
 
    .contenedor-principal-header.show{
@@ -43,7 +43,7 @@
    
    #presentacion .checkbtn{  
       display: block;
-      left: 92%;
+      left: 90%;
       
    }
 

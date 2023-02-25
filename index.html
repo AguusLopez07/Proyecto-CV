@@ -36,7 +36,7 @@
     <!-- ===== Barra de Navegacion =====-->
             <nav class="navbar">
                 <ul id="categorias">
-                    <li><a href="#presentacion"><i class="bi bi-house activo"></i><span class="activo">Hogar</span></a></li>
+                    <li><a href="#presentacion"><i class="bi bi-house "></i><span >Hogar</span></a></li>
                     <li><a href="#sobre-mi"><i class="bi bi-person"></i><span>Sobre Mi</span></a></li>
                     <li><a href="#educacion-experiencia"><i class="bi bi-database-gear"></i><span>Experiencia</span></a></li>
                     <li><a  href="#educacion"><i class="bi bi-mortarboard"></i><span>Estudios</span></a></li>
@@ -282,8 +282,29 @@
     </footer>
 <!--JAVASCRIPTS-->
     <script src="js/main.js"></script>
-    
 
-    
+<!--scroll suave-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+
+            $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+                     event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                    window.location.hash = hash;
+                    });
+                } 
+            });
+        });
+    </script> 
 </body>
 </html>

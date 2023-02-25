@@ -21,7 +21,7 @@ const observer = new IntersectionObserver((entries) => {
             icon.classList.remove('activo');
             span.classList.remove('activo');
         }
-    })
+    });
 }, {rootMargin: "-30% 0px -70% 0px" } 
 );
 
@@ -73,7 +73,11 @@ function manejarSubmit(evento){
     botonEmail.setAttribute('href', `mailto:aguustinlopez07@gmail.com?subject= De parte de: ${form.get('nombre')}. Asunto: ${form.get('asunto')}&body=Mi numero de telefono: ${form.get('telefono')} ${form.get('mensaje')}`);
     botonEmail.click();
     alert('Su mensaje se esta cargando!')
-}
+};
+
+
+
+    
 
 
 
